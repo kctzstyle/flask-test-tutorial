@@ -16,6 +16,7 @@ def index():
     index = Index(title='Index', content="Hello, Flask!")
     return render_template("index.html", index=index)
 
+
 @Application.route("/kctzstyle/")
 def kctzstyle():
     return redirect("https://github.com/kctzstyle")
